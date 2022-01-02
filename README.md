@@ -9,4 +9,10 @@ I made this to run as a daemonset on [Talos](https://github.com/talos-systems/ta
 
 ## Install
 
-TODO: Add kubernetes manifest
+Create the namespace
+
+`kubectl create namespace qemu-guest-agent`
+
+Apply the daemonset
+
+`kubectl apply -f https://raw.githubusercontent.com/AdamSutch/qemu-guest-agent/master/daemonset.yaml`
